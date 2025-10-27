@@ -12,4 +12,4 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Publish Loconotion Site
-        uses: leoncvlt/loconotion@main
+      uses: leoncvlt/loconotion@<commit-hash>
