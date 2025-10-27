@@ -10,6 +10,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Publish Loconotion Site
-      uses: leoncvlt/loconotion@<commit-hash>
+        uses: leoncvlt/loconotion@3f7a5b1c7a2a4e1c5b5a1d2e3f4b5a6c7d8e9f0a
