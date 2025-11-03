@@ -8,7 +8,7 @@ navItems.forEach(link => {
   }
 });
 
-// Optional: smooth scroll for anchor links (if needed in-page)
+// Smooth scroll for anchors (optional)
 document.querySelectorAll('a[href^="#"]').forEach(a => {
   a.addEventListener('click', e => {
     const href = a.getAttribute('href');
