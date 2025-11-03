@@ -1,132 +1,37 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Times New Roman', serif;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Why Are People So Lazy?</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    Previous Papers
+  </header>
 
-/* Body */
-body {
-    display: flex;
-    min-height: 100vh;
-    background-color: #f5f5dc; /* Beige */
-    color: #001f3f; /* Navy text */
-    transition: background 0.3s, color 0.3s;
-}
+  <aside class="sidebar">
+    <nav class="sidebar-links">
+      <a href="index.html" class="nav-item">Home Page</a>
+      <a href="lazypaper.html" class="nav-item">Why Are People So Lazy?</a>
+      <a href="ChristianBusinessLeaders.html" class="nav-item">Christian Business Leaders</a>
+    </nav>
+  </aside>
 
-/* Header */
-header {
-    background-color: #001f3f; /* Dark navy */
-    color: #f5f5dc; /* Beige text */
-    height: 10vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Caveat', cursive;
-    font-size: 2em;
-    border-bottom: 2px solid #f5f5dc; /* Beige outline */
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-}
+  <main class="content">
+    <section>
+      <p><strong>Samuel Franks<br>Composition II<br>December 1st, 2024<br>Why Are People So Lazy</strong></p>
+      <p>
+        Everyday you will see hundreds if not thousands of narratives in the media. They are being presented to you whether you like it or not, some of them so discrete you wouldn’t have consciously noticed. But time and time again I would see foreigners making jokes about how Americans are so lazy, obese, and crazy in general. For the longest time I would treat this as just another one of the narratives I am being presented with, despite it being presented to me numerous times.
+      </p>
+      <p>
+        I told myself that just as there are crazy Americans there are also crazy foreigners, and that those are the ones that are spreading these false or exaggerated narratives. That method was working just fine until I actually became friends with a foreigner...
+      </p>
+      <!-- Continue pasting the rest of your Laziness Paper content here -->
+    </section>
+  </main>
 
-/* Sidebar */
-.sidebar {
-    position: fixed;
-    top: 10vh; /* below header */
-    left: 0;
-    width: 220px;
-    height: 90vh;
-    background-color: #001f3f; /* Dark navy */
-    border-right: 2px solid #f5f5dc; /* Beige outline */
-    border-radius: 0 10px 10px 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    transition: width 0.3s;
-}
-
-/* Sidebar Links */
-.sidebar-links {
-    flex-grow: 1;
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-}
-
-.sidebar-links a {
-    display: flex;
-    align-items: center;
-    color: #f5f5dc;
-    text-decoration: none;
-    padding: 15px;
-    margin: 5px 10px;
-    border-radius: 8px;
-    transition: background 0.3s;
-}
-
-.sidebar-links a:hover {
-    background-color: #003366;
-}
-
-.sidebar-links a span.title {
-    margin-left: 10px;
-}
-
-/* Active link */
-.sidebar-links a.active {
-    background-color: #003366;
-}
-
-/* Main content */
-.content {
-    margin-left: 220px;
-    margin-top: 10vh;
-    padding: 30px;
-    transition: margin-left 0.3s, background 0.3s, color 0.3s;
-}
-
-/* Light Mode */
-body.light-mode {
-    background-color: #f5f5dc; /* Beige */
-    color: #001f3f; /* Navy text */
-}
-
-body.light-mode .sidebar {
-    background-color: #001f3f; /* Keep dark navy */
-    border-right: 2px solid #f5f5dc;
-}
-
-body.light-mode header {
-    background-color: #001f3f; /* Keep dark navy */
-    color: #f5f5dc;
-}
-
-body.light-mode .sidebar-links a {
-    color: #f5f5dc;
-}
-
-body.light-mode .sidebar-links a.active {
-    background-color: #003366;
-}
-
-/* Dark Mode */
-body:not(.light-mode) {
-    background-color: #001f3f; /* Dark navy */
-    color: #f5f5dc; /* Beige text */
-}
-
-body:not(.light-mode) .content {
-    color: #f5f5dc;
-}
-
-body:not(.light-mode) .sidebar-links a {
-    color: #f5f5dc;
-}
-
-body:not(.light-mode) .sidebar-links a.active {
-    background-color: #003366;
-}
+  <script src="script.js"></script>
+</body>
+</html>
